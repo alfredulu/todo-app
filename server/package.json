@@ -1,0 +1,21 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Production-grade Todo API with Fastify and Supabase",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "@fastify/cors": "^8.4.2",
+    "fastify-plugin": "^4.5.1",
+    "@supabase/supabase-js": "^2.38.2",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

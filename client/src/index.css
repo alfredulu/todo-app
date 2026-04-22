@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors font-medium;
+  }
+
+  .btn-danger {
+    @apply px-3 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors;
+  }
+
+  .btn-icon {
+    @apply p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-600 hover:text-gray-800;
+  }
+}
