@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+!.env.template
+env/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs / caches (Vite + general JS)
+dist/
+build/
+out/
+.vite/
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+coverage/
+
+# Optional local tooling
+.npmrc
+!.npmrc.example
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+server/.env
+server/.env
