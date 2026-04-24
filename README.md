@@ -374,25 +374,7 @@ npm run build
 
 ## 🌐 Production Deployment
 
-**See [DEPLOYMENT.md](./DEPLOYMENT.md) for complete deployment guide.**
-
 ### Quick Summary
-
-**Backend:** Deploy to Render
-
-```bash
-# Set environment variables in Render:
-SUPABASE_URL=...
-SUPABASE_KEY=...
-PORT=3000
-```
-
-**Frontend:** Deploy to Vercel
-
-```bash
-# Set environment variable in Vercel:
-VITE_API_URL=https://your-backend-url.onrender.com/api
-```
 
 The frontend will use the `VITE_API_URL` environment variable in production, while locally it uses the `/api` proxy.
 
@@ -426,5 +408,4 @@ The frontend will use the `VITE_API_URL` environment variable in production, whi
 - Supabase free tier is sufficient for development
 - API uses standard REST conventions
 - Frontend includes error recovery and loading states
-- Clean separation of concerns throughout
 - Environment variables for local and production
