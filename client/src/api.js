@@ -9,10 +9,7 @@ export const apiClient = {
     if (filter.page) params.append("page", filter.page);
     if (filter.limit) params.append("limit", filter.limit);
 
-    const query = params.toString();
-    const url = query ? `${API_BASE}/todos?${query}` : `${API_BASE}/todos`;
-
-    const response = await fetch(url);
+    const response = await fetch(`${API_BASE}/todos?${params}`);
     if (!response.ok) throw new Error("Failed to fetch todos");
     return response.json();
   },
@@ -47,6 +44,7 @@ export const apiClient = {
     const response = await fetch(`${API_BASE}/todos/${id}/toggle`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({}),
     });
     if (!response.ok) {
       const error = await response.json();
