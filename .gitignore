@@ -40,5 +40,3 @@ desktop.ini
 .vscode/
 *.swp
 *.swo
-server/.env
-server/.env
